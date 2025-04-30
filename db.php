@@ -2,11 +2,12 @@
 
 function getDBConnection() {
     $servername = "sql.freedb.tech";
-    $username = "freedb_quackrantine";
+    $username = "freedb_quackratine";
     $password = "!S$62Am!DTx*2ZF";
-    $dbname = "freedb_finaltask";
+    $database = "freedb_finaltask";
     $port = 3306;
 
+    
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
