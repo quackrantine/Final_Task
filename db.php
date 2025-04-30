@@ -1,7 +1,7 @@
 <?php
 
 function getDBConnection() {
-    $servername = "localhost";
+    $servername = "127.0.0.1";
     $username = "root";
     $password = "";
     $dbname = "blackmarket_db";
