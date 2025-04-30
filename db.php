@@ -1,10 +1,11 @@
 <?php
 
 function getDBConnection() {
-    $servername = "127.0.0.1";
-    $username = "root";
-    $password = "";
-    $dbname = "blackmarket_db";
+    $servername = "sql.freedb.tech";
+    $username = "freedb_quackrantine";
+    $password = "!S$62Am!DTx*2ZF";
+    $dbname = "freedb_finaltask";
+    $port = 3306;
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
