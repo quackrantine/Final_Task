@@ -2,7 +2,7 @@
 session_start();
 
 if(isset($_SESSION["email"])){
-    header("Location: home.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -44,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                         $_SESSION["phone"] = $phone;
                         $_SESSION["created_at"] = $created_at;
 
-                        header("Location: home.php");
+                        header("Location: index.php");
                         exit();
                     } else{
                         $login_err = "Invalid email or password.";
@@ -106,10 +106,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 <body>
 
     <header>
-        <a href="home.php"><img class="logo" src="wmremove-transformed.png" alt="Quack's Blackmarket Logo"></a>
+        <a href="index.php"><img class="logo" src="wmremove-transformed.png" alt="Quack's Blackmarket Logo"></a>
         <nav>
              <ul>
-                 <li><a href="home.php">Home</a></li>
+                 <li><a href="index.php">Home</a></li>
              </ul>
          </nav>
         <div class="button-group">
